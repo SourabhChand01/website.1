@@ -1,0 +1,120 @@
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.status{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    padding: 0 10px;
+    border-radius: 30px;
+    font-size: 14px;
+    color: grey;
+    gap: 5px;
+    z-index: 1;
+}
+.status1{
+    width: 20px;
+    height: 20px;
+}
+.outer{
+    height:100%;
+    width: 100%;
+    background-color: rgba(141, 164, 141, 0.658);
+    border-radius: 50%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;   
+}
+.inner{
+    height: 50%;
+    width: 50%;
+    background-color: rgb(10, 159, 10);
+    border-radius: 50%;
+}
+.breathing {
+  animation: breathe 1.5s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.7;
+  }
+}
+.heroText{
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+.name{
+    font-size: 90px;
+    font-weight: 600;
+    color: rgb(235, 144, 7);
+    margin: 0;
+}
+.line1{
+    font-size: 70px;
+    margin: 0;
+}
+.line2{
+    font-size: 70px;
+    margin: 0;
+    color: rgb(235, 144, 7);
+
+}
+.line3{
+    font-size: 30px;
+    margin: 0;
+    color: grey;
+}
+.learnmore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    }
+    .learnmore:hover{
+    cursor: pointer;
+}
+.arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 4px;
+}
+.arrow:hover{
+    animation: forward 1s linear infinite;
+}
+@keyframes forward {
+  0% {
+    transform: translate(0);
+  }
+  50%{
+    transform: translate(15px,15px);
+    color: transparent;
+  }
+  55%{
+    color: white;
+    transform: translate(-4px,-4px);
+  }
+    100% {
+        transform: translate(0);
+    }
+
+}
